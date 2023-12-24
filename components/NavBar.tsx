@@ -13,7 +13,7 @@ const NavBar = () => {
         <div
             className={`flex flex-row justify-between items-center bg-black h-[10vh] text-white text-2xl p-12 ${lato.className}`}
         >
-            <div className="flex gap-16 items-center">
+            <div className="flex gap-14 items-center">
                 <Link href="/" className={`text-3xl ${orbitron.className}`}>
                     CopilotCareer
                 </Link>

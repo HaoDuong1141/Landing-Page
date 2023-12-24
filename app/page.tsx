@@ -1,6 +1,6 @@
 import Image from "next/image";
-import NavBar from "@/components/NavBar";
 import { Lato } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const lato = Lato({
     subsets: ["latin"],
@@ -21,9 +21,7 @@ const backgroundStyle = {
 export default function Home() {
     return (
         <main className={lato.className}>
-            <NavBar />
-
-            <div className="h-[400vh] text-white">
+            <div className="h-[450vh] text-white">
                 <div className="h-[100vh]">
                     <div
                         className="absolute h-[100vh] bg-cover bg-gradient-to-t from-white to-black"
@@ -69,7 +67,69 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div className="h-[200vh] bg-slate-900"></div>
+                <div className="h-[250vh] bg-gradient-to-b from-[#0B323E] to-[#101C20] text-xl">
+                    <div className="h-[70vh] flex flex-row justify-around items-center">
+                        <div className="h-[350px] w-[450px]">
+                            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#147390] to-[#A6FBB2]">
+                                Private and Efficient Self-Assessment
+                            </div>
+                            <p className="text-2xl w-[430px] pt-12 leading-relaxed">
+                                Only 16 questions provide a quick yet insightful
+                                evaluation of your Emotional Fulfillment,
+                                Intellectuak Engagement, Workplace Relationship,
+                                and Engagement within your current role.
+                            </p>
+                        </div>
+                        <Image
+                            src="/image1.png"
+                            alt="First Image"
+                            width={500}
+                            height={500}
+                            className=""
+                        />
+                    </div>
+                    <div className="h-[70vh] flex flex-row justify-around items-center">
+                        <Image
+                            src="/image2.png"
+                            alt="First Image"
+                            width={500}
+                            height={500}
+                            className=""
+                        />
+                        <div className="h-[350px] w-[470px]">
+                            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#147390] to-[#A6FBB2]">
+                                Confidential Guidance for Career Transitions
+                            </div>
+                            <p className="text-2xl w-[430px] pt-12 leading-relaxed">
+                                Specifically designed for professionals at a
+                                turning point, this private tool provides
+                                insights into job satisfaction and performance,
+                                offering confidential guidance for pivotal
+                                career decisions.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="h-[70vh] flex flex-row justify-around items-center">
+                        <div className="h-[350px] w-[430px]">
+                            <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#147390] to-[#A6FBB2]">
+                                Peer Comparions for Context
+                            </div>
+                            <p className="text-2xl w-[420px] pt-12 leading-relaxed">
+                                Compare your career progress with peers in a
+                                secure environment, offering a private yet clear
+                                perspective on where you stand professionally.
+                            </p>
+                        </div>
+                        <Image
+                            src="/image3.png"
+                            alt="First Image"
+                            width={500}
+                            height={500}
+                            className=""
+                        />
+                    </div>
+                    <Footer />
+                </div>
             </div>
         </main>
     );
